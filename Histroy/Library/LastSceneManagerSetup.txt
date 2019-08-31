@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Coroutine/Secene/CoroutineTest.unity
+- path: Assets/Rigidbody/Scene/RigidbodyTest.unity
   isLoaded: 1
   isActive: 1

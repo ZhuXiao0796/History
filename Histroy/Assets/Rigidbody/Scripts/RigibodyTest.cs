@@ -22,6 +22,10 @@ namespace History.RigidbodyTest
             //StartCoroutine(Impulse());
         }
 
+        private void Update()
+        {
+        }
+
         void MoveTo()
         {
             rigidbody.MovePosition(endPos);
