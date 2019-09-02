@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Rigidbody/Scene/RigidbodyTest.unity
+- path: Assets/AnimatorTest/Scene/AnimatorTest.unity
   isLoaded: 1
   isActive: 1
