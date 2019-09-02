@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/AnimatorTest/Scene/AnimatorTest.unity
+- path: Assets/CSharpTest/Scene/TryCatch.unity
   isLoaded: 1
   isActive: 1

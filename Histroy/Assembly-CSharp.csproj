@@ -62,6 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\AnimatorTest\Scripts\AnimatorTest.cs" />
     <Compile Include="Assets\Coroutine\Scripts\CoroutineTest.cs" />
+    <Compile Include="Assets\Coroutine\Scripts\WhileCoroutineTest.cs" />
+    <Compile Include="Assets\CSharpTest\Scripts\TryCatchTest.cs" />
     <Compile Include="Assets\DelegateAndEventTest\Scripts\DelegateTestA.cs" />
     <Compile Include="Assets\DelegateAndEventTest\Scripts\EventAndDelegate.cs" />
     <Compile Include="Assets\DelegateAndEventTest\Scripts\MyObserverTest.cs" />
