@@ -5,7 +5,8 @@ using UnityEngine;
 namespace History.CoroutineTest
 {
     /// <summary>
-    /// 当在协程内部用 While 进行判断，在外部打断  While 内的条件，则 While 中止。
+    /// 测试了 当在协程内部用 While 进行判断，在外部打断  While 内的条件，则 While 中止。
+    /// 测试了 协程内部运动 每帧运动是否需要加时间类
     /// </summary>
     public class WhileCoroutineTest : MonoBehaviour
     {
@@ -13,9 +14,11 @@ namespace History.CoroutineTest
         // Start is called before the first frame update
         void Start()
         {
-            status = true;
-            StartCoroutine(WhileTest());
-            Invoke("ChangeStatus", 5f);
+            //status = true;
+            //StartCoroutine(WhileTest());
+            //Invoke("ChangeStatus", 5f);
+
+            StartCoroutine(MoveToTarget(new Vector3 (100,0,0)));
         }
 
         private void ChangeStatus()
@@ -29,6 +32,15 @@ namespace History.CoroutineTest
             {
                 Debug.Log(11111);
                 yield return new WaitForSeconds(1f);
+            }
+        }
+
+        private IEnumerator MoveToTarget(Vector3 endPos)
+        {
+            while (Vector3.Distance(transform.position,endPos)>=0.1f)
+            {
+                transform.position = Vector3.MoveTowards(transform.position,endPos,Time.deltaTime*2f);
+                yield return null;
             }
         }
     }

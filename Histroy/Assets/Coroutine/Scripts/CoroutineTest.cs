@@ -5,7 +5,8 @@ using UnityEngine;
 namespace History.CoroutineTest
 {
     /// <summary>
-    /// 协程的 Yield break 测试
+    /// 测试了 Yield break 
+    /// 测试了 Yield return 后面跟任意的数字
     /// </summary>
     public class CoroutineTest : MonoBehaviour
     {
