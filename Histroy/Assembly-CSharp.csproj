@@ -70,6 +70,7 @@
     <Compile Include="Assets\DelegateAndEventTest\Scripts\ObserverTest.cs" />
     <Compile Include="Assets\InterfaceTest\Scripts\InterfaceTest.cs" />
     <Compile Include="Assets\OnDestroyTest\Scripts\OnDestroyTest.cs" />
+    <Compile Include="Assets\Physics\Scripts\PhysicsTest.cs" />
     <Compile Include="Assets\Rigidbody\Scripts\DragTest.cs" />
     <Compile Include="Assets\Rigidbody\Scripts\RigibodyTest.cs" />
     <Compile Include="Assets\ValueAndReference\EnumAndReference.cs" />
