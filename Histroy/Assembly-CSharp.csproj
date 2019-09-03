@@ -73,6 +73,7 @@
     <Compile Include="Assets\Physics\Scripts\PhysicsTest.cs" />
     <Compile Include="Assets\Rigidbody\Scripts\DragTest.cs" />
     <Compile Include="Assets\Rigidbody\Scripts\RigibodyTest.cs" />
+    <Compile Include="Assets\TransformTest\Scripts\TransformTest.cs" />
     <Compile Include="Assets\ValueAndReference\EnumAndReference.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/GitHubDesktop/History/History/Histroy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

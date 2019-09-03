@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Physics/Scene/PhysicsTest.unity
+- path: Assets/TransformTest/Scene/TransformTest.unity
   isLoaded: 1
   isActive: 1
