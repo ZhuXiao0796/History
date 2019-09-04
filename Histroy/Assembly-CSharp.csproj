@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ActionAndFuncTest\Scripts\ActionTest.cs" />
     <Compile Include="Assets\AnimatorTest\Scripts\AnimatorTest.cs" />
     <Compile Include="Assets\Coroutine\Scripts\CoroutineTest.cs" />
     <Compile Include="Assets\Coroutine\Scripts\WhileCoroutineTest.cs" />
@@ -76,7 +77,9 @@
     <Compile Include="Assets\SystemIOTest\Scripts\SystemIOTest.cs" />
     <Compile Include="Assets\TransformTest\Scripts\TransformTest.cs" />
     <Compile Include="Assets\ValueAndReference\EnumAndReference.cs" />
+    <Compile Include="Assets\Vector3\Scripts\Vector3Test.cs" />
     <None Include="Assets\SystemIOTest\SystemIOLog\ReadMe.txt" />
+    <None Include="Assets\ActionAndFuncTest\README.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/GitHubDesktop/History/History/Histroy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
