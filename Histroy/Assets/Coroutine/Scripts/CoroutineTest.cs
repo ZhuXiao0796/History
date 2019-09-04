@@ -26,7 +26,7 @@ namespace History.CoroutineTest
             yield return new WaitForSeconds(1f);
             Debug.Log("Two");
             yield break;
-            Debug.Log("Null");
+            //Debug.Log("Null");
         }
 
         /// <summary>

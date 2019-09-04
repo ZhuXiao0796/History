@@ -43,5 +43,15 @@ namespace History.CoroutineTest
                 yield return null;
             }
         }
+
+        private IEnumerator Drag(float dis,Vector3 endPos,float speed)
+        {
+            while (Vector3.Distance(transform.position,endPos)<=dis)
+            {
+                transform.position = Vector3.MoveTowards(transform.position,endPos,speed * Time.deltaTime);
+                yield return null;
+            }
+            yield break;
+        }
     }
 }
