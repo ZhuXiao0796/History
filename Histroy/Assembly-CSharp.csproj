@@ -75,6 +75,7 @@
     <Compile Include="Assets\Rigidbody\Scripts\DragTest.cs" />
     <Compile Include="Assets\Rigidbody\Scripts\RigibodyTest.cs" />
     <Compile Include="Assets\SystemIOTest\Scripts\SystemIOTest.cs" />
+    <Compile Include="Assets\TransformTest\Scripts\DirectionTest.cs" />
     <Compile Include="Assets\TransformTest\Scripts\TransformTest.cs" />
     <Compile Include="Assets\ValueAndReference\EnumAndReference.cs" />
     <Compile Include="Assets\Vector3\Scripts\Vector3Test.cs" />
