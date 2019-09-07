@@ -20,7 +20,7 @@ namespace History.AnimatorTest
         //那么动画是否能正常播放呢
         void Update()
         {
-            Animator.SetTrigger("hit");
+            //Animator.SetTrigger("hit");
         }
     }
 }
