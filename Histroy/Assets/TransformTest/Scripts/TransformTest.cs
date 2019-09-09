@@ -13,6 +13,7 @@ namespace History.TransformTest
         void Start()
         {
             transform.position = new Vector3(10,10,10);
+            //transform.position.
             Debug.Log(transform.up);
             Debug.Log(transform.forward);
             Debug.Log(transform.right);
