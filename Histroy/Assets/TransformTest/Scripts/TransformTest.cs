@@ -12,17 +12,13 @@ namespace History.TransformTest
         // Start is called before the first frame update
         void Start()
         {
-            transform.position = new Vector3(10,10,10);
+            Debug.Log(transform.position);
+            transform.position = new Vector3(0,10,0);
+            Debug.Log(transform.position);
             //transform.position.
-            Debug.Log(transform.up);
-            Debug.Log(transform.forward);
-            Debug.Log(transform.right);
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            //Debug.Log(transform.up);
+            //Debug.Log(transform.forward);
+            //Debug.Log(transform.right);
         }
     }
 }
