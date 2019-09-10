@@ -12,31 +12,24 @@ namespace History.RigidbodyTest
         private readonly bool move = true;
         new Rigidbody rigidbody;
         Vector3 endPos = new Vector3(5, 0, 5);
+
         // Start is called before the first frame update
         void Start()
         {
             rigidbody = GetComponent<Rigidbody>();
-            //StartCoroutine(VelocityChange());
-            StartCoroutine(Force());
+
+            StartCoroutine(VelocityChange());
+            //StartCoroutine(Force());
             //StartCoroutine(Acceleration());
             //StartCoroutine(Impulse());
         }
 
-        private void Update()
-        {
-        }
-
-        void MoveTo()
-        {
-            rigidbody.MovePosition(endPos);
-        }
 
         private IEnumerator VelocityChange()
         {
             while (move)
             {
-                Debug.Log(111111111);
-                rigidbody.AddRelativeForce(endPos, ForceMode.VelocityChange);
+                rigidbody.AddForce(endPos, ForceMode.VelocityChange);
                 if (rigidbody.velocity.sqrMagnitude > 200)
                 {
                     yield break;
@@ -49,8 +42,6 @@ namespace History.RigidbodyTest
         {
             while (move)
             {
-                Debug.Log(111111111);
-                //rigidbody.AddRelativeForce(endPos.normalized, ForceMode.Impulse);
                 rigidbody.AddForce(endPos.normalized*10, ForceMode.Acceleration);
                 if (rigidbody.velocity.sqrMagnitude > 100)
                 {
@@ -64,8 +55,7 @@ namespace History.RigidbodyTest
         {
             while (move)
             {
-                Debug.Log(111111111);
-                rigidbody.AddRelativeForce(endPos, ForceMode.Force);
+                rigidbody.AddForce(endPos, ForceMode.Force);
                 if (rigidbody.velocity.sqrMagnitude > 200)
                 {
                     yield break;
@@ -78,8 +68,7 @@ namespace History.RigidbodyTest
         {
             while (move)
             {
-                Debug.Log(111111111);
-                rigidbody.AddRelativeForce(endPos, ForceMode.Impulse);
+                rigidbody.AddForce(endPos, ForceMode.Impulse);
                 if (rigidbody.velocity.sqrMagnitude > 200)
                 {
                     yield break;
