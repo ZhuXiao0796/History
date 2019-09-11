@@ -4,24 +4,28 @@ using UnityEngine;
 
 public class Vector3Test : MonoBehaviour
 {
+    public GameObject A;
+    public GameObject B;
     // Start is called before the first frame update
     void Start()
     {
-        Vector3 v1 = new Vector3(5,5,5);
-        Vector3 v2 = new Vector3(7,7,7);
-
         //求两个向量的夹角
-        var angle = Vector3.Angle(v1,v2);
-
-        //求两个向量的距离
-        var dis = Vector3.Distance(v1,v2);
-
-
+        //所以一般都是某物体的一个轴和另一个物体的某坐标轴
+        //或者某物体的一个轴，和另一个物体的一个轴进行比较
+        //var angle = Vector3.Angle(A.transform.position,B.transform.position);
+        //Debug.Log(angle);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnGUI()
     {
-        
+        if (GUILayout.Button("Angle"))
+        {
+            Debug.Log(Vector3.Angle(A.transform.position,B.transform.position));
+        }
+        if (GUILayout.Button("SignedAngle"))
+        {
+            Debug.Log(Vector3.SignedAngle(A.transform.position-B.transform.position,A.transform.position,-transform.up));
+        }
     }
+
 }
