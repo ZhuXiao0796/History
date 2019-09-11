@@ -5,8 +5,16 @@ using UnityEngine.UI;
 
 namespace History.CoroutineTest
 {
+    /// <summary>
+    /// 这个脚本用来在左上角显示当前帧数
+    /// 不过帧数是预先写好的
+    /// 并且要关掉 Unity 编辑器里面的垂直同步设置
+    /// </summary>
     public class FrameEveryPer : MonoBehaviour
     {
+
+        public int FixedFrame = 30;
+
         private float m_LastUpdateShowTime = 0f;    //上一次更新帧率的时间;
 
         private float m_UpdateShowDeltaTime = 0.01f;//更新帧率的时间间隔;
@@ -17,7 +25,7 @@ namespace History.CoroutineTest
 
         void Awake()
         {
-            Application.targetFrameRate = 30;
+            Application.targetFrameRate = FixedFrame;
         }
 
         // Use this for initialization

@@ -2,35 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TryCatchTest : MonoBehaviour
+namespace History.CSharpTest
 {
-	public GameObject A;
-    int i = 0;
-    // Start is called before the first frame update
-    void Start()
+    public class TryCatchTest : MonoBehaviour
     {
-        try
+        public GameObject A;
+        int i = 0;
+        // Start is called before the first frame update
+        void Start()
         {
-            if (i>=0)
+            try
             {
-                return;
+                if (i >= 0)
+                {
+                    return;
+                }
+                Debug.Log(A.name);
             }
-            Debug.Log(A.name);
+            catch (System.Exception e)
+            {
+                Debug.Log(e.Message);
+                throw;
+            }
+            finally
+            {
+                Debug.Log("Finally part");
+            }
         }
-        catch (System.Exception e)
-        {
-            Debug.Log(e.Message);
-            throw;
-        }
-        finally
-        {
-            Debug.Log("Finally part");
-        }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

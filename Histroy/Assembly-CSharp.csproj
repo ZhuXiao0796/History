@@ -65,6 +65,7 @@
     <Compile Include="Assets\Coroutine\Scripts\CoroutineTest.cs" />
     <Compile Include="Assets\Coroutine\Scripts\FrameAndCoroutineTest.cs" />
     <Compile Include="Assets\Coroutine\Scripts\FrameEveryPer.cs" />
+    <Compile Include="Assets\Coroutine\Scripts\WaitCoroutineTest.cs" />
     <Compile Include="Assets\Coroutine\Scripts\WhileCoroutineTest.cs" />
     <Compile Include="Assets\CSharpTest\Scripts\TryCatchTest.cs" />
     <Compile Include="Assets\DelegateAndEventTest\Scripts\DelegateTestA.cs" />
