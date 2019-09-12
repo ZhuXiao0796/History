@@ -90,7 +90,7 @@
     <Compile Include="Assets\TransformTest\Scripts\DirectionTest.cs" />
     <Compile Include="Assets\TransformTest\Scripts\TransformTest.cs" />
     <Compile Include="Assets\ValueAndReference\EnumAndReference.cs" />
-    <Compile Include="Assets\Vector3\Scripts\Vector3Test.cs" />
+    <Compile Include="Assets\Vector3AndQua\Scripts\Vector3Test.cs" />
     <None Include="Assets\Resources\ParticleSystemPack\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Resources\ParticleSystemPack\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Resources\ParticleSystemPack\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
