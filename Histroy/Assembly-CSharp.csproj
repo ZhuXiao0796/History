@@ -74,7 +74,9 @@
     <Compile Include="Assets\DelegateAndEventTest\Scripts\MyObserverTest.cs" />
     <Compile Include="Assets\DelegateAndEventTest\Scripts\ObserverTest.cs" />
     <Compile Include="Assets\InterfaceTest\Scripts\InterfaceTest.cs" />
+    <Compile Include="Assets\LineRendererTest\Scripts\LineRendererTest.cs" />
     <Compile Include="Assets\OnDestroyTest\Scripts\OnDestroyTest.cs" />
+    <Compile Include="Assets\ParticleSystemTest\Scripts\PatricleSystemTest.cs" />
     <Compile Include="Assets\Physics\Scripts\PhysicsTest.cs" />
     <Compile Include="Assets\Resources\ParticleSystemPack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Resources\ParticleSystemPack\Shared\Ramps\Runtime\RampAsset.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Assets\Resources\ParticleSystemPack\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Rigidbody\Scripts\DragTest.cs" />
     <Compile Include="Assets\Rigidbody\Scripts\RigibodyTest.cs" />
+    <Compile Include="Assets\Rigidbody\Scripts\TriggerTest.cs" />
     <Compile Include="Assets\SystemIOTest\Scripts\SystemIOTest.cs" />
     <Compile Include="Assets\TimeTest\Scripts\TimeScaleTest.cs" />
     <Compile Include="Assets\TransformTest\Scripts\DirectionTest.cs" />

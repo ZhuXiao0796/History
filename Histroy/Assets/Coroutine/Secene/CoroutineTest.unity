@@ -580,6 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aaa8e0eb1119054cbfe2851865dfdff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FixedFrame: 60
 --- !u!1 &1384125780
 GameObject:
   m_ObjectHideFlags: 0

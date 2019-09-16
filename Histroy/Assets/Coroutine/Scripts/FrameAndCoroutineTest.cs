@@ -2,31 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrameAndCoroutineTest : MonoBehaviour
+namespace History.CoroutineTest
 {
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// 不同帧数下  协程中等待时间的影响
+    /// </summary>
+    public class FrameAndCoroutineTest : MonoBehaviour
     {
-        StartCoroutine(WaitForSecondsTest());
-        StartCoroutine(WaitForSecondsRealtimeTest());
-    }
-
-    private IEnumerator WaitForSecondsTest()
-    {
-        while (true)
+        // Start is called before the first frame update
+        void Start()
         {
-            Debug.Log(Time.realtimeSinceStartup+"当前情况是 WaitForSeconds");
-            yield return new WaitForSeconds(1f);
+            StartCoroutine(WaitForSecondsTest());
+            StartCoroutine(WaitForSecondsRealtimeTest());
         }
-    }
 
-    private IEnumerator WaitForSecondsRealtimeTest()
-    {
-        while (true)
+        private IEnumerator WaitForSecondsTest()
         {
-            Debug.Log(Time.realtimeSinceStartup + "当前情况是 WaitForSecondsRealtime");
-            yield return new WaitForSecondsRealtime(1f);
+            while (true)
+            {
+                Debug.Log(Time.realtimeSinceStartup + "当前情况是 WaitForSeconds");
+                yield return new WaitForSeconds(1f);
+            }
         }
-    }
 
+        private IEnumerator WaitForSecondsRealtimeTest()
+        {
+            while (true)
+            {
+                Debug.Log(Time.realtimeSinceStartup + "当前情况是 WaitForSecondsRealtime");
+                yield return new WaitForSecondsRealtime(1f);
+            }
+        }
+
+    }
 }
