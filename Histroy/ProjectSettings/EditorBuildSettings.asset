@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Component/Rigidbody/Scene/Rigidbody_AddForceTest.unity
+    guid: 44c3cce6759209a4eb448df72656b0a1
+  m_configObjects: {}
