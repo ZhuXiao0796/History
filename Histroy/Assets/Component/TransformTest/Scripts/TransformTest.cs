@@ -7,13 +7,14 @@ namespace History.ComponentTest.TransformTest
     /// <summary>
     /// 测试了 好奇很久的 当前坐标的前后左右的实际值
     /// 测试了 新了解到的属性 hasChanged
+    /// 测试 transform.forward
     /// </summary>
     public class TransformTest : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
         {
-            HierarchyCapacityTest();
+            //HierarchyCapacityTest();
         }
         void DirectionTest()
         {
@@ -21,9 +22,9 @@ namespace History.ComponentTest.TransformTest
             transform.position = new Vector3(0, 10, 0);
             Debug.Log(transform.position);
             //transform.position.
-            //Debug.Log(transform.up);
-            //Debug.Log(transform.forward);
-            //Debug.Log(transform.right);
+            Debug.Log(transform.up);
+            Debug.Log(transform.forward);
+            Debug.Log(transform.right);
         }
 
         void PosChange()
@@ -37,6 +38,16 @@ namespace History.ComponentTest.TransformTest
         void HierarchyCapacityTest()
         {
             Debug.Log(transform.hierarchyCapacity);
+        }
+
+        void TransformForwardTest()
+        {
+            transform.LookAt(transform.forward);
+        }
+
+        private void Update()
+        {
+            TransformForwardTest();
         }
     }
 }

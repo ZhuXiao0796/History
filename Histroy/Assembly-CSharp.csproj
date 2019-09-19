@@ -72,6 +72,7 @@
     <Compile Include="Assets\Component\TransformTest\Scripts\DirectionTest.cs" />
     <Compile Include="Assets\Component\TransformTest\Scripts\LookAtOnlyY.cs" />
     <Compile Include="Assets\Component\TransformTest\Scripts\TransformTest.cs" />
+    <Compile Include="Assets\Component\TransformTest\Scripts\UILookForward.cs" />
     <Compile Include="Assets\CSharpAPI\ActionAndFuncTest\Scripts\ActionTest.cs" />
     <Compile Include="Assets\CSharpAPI\BoolAndTryCatch\Scripts\BoolValueTest.cs" />
     <Compile Include="Assets\CSharpAPI\BoolAndTryCatch\Scripts\TryCatchTest.cs" />
