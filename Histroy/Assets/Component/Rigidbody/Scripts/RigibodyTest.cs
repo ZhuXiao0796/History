@@ -18,12 +18,21 @@ namespace History.ComponentTest.RigidbodyTest
         {
             rigidbody = GetComponent<Rigidbody>();
 
-            StartCoroutine(VelocityChange());
+            rigidbody.velocity = new Vector3(1,0,1);
+            rigidbody.MovePosition(new Vector3(50,0,50));
+
+            //StartCoroutine(VelocityChange());
             //StartCoroutine(Force());
             //StartCoroutine(Acceleration());
             //StartCoroutine(Impulse());
         }
-
+        private void Update()
+        {
+            if (Vector3.Distance(transform.position,new Vector3(50,0,50))<=0.1f)
+            {
+                rigidbody.Sleep();
+            }
+        }
 
         private IEnumerator VelocityChange()
         {

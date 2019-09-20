@@ -11,16 +11,18 @@ namespace History.ComponentTest.PhysicsTest
     {
         public GameObject end;
         public  Vector3 endPos = new Vector3(0,5,0);
+        float height;
         // Start is called before the first frame update
         void Start()
         {
-           //var colliders = Physics.
+            var capsule = gameObject.GetComponent<CapsuleCollider>();
+            height = capsule.height;
         }
 
         // Update is called once per frame
         void Update()
         {
-            var colliders = Physics.OverlapCapsule(transform.position, endPos, 5f);
+            var colliders = Physics.OverlapCapsule(transform.position-transform.up, transform.position + transform.up, 1f);
             if (colliders!=null)
             {
                 foreach (var item in colliders)
