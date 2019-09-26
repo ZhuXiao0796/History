@@ -45,6 +45,14 @@ namespace History.ComponentTest.TransformTest
             transform.LookAt(transform.forward);
         }
 
+        /// <summary>
+        ///  Transform 本地 角度朝向测试
+        /// </summary>
+        void TransformLocalRotationTest()
+        {
+            transform.localRotation = Quaternion.Euler(new Vector3());
+        }
+
         private void Update()
         {
             TransformForwardTest();

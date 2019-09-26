@@ -67,6 +67,7 @@
     <Compile Include="Assets\Component\ParticleSystemTest\Scripts\PatricleSystemTest.cs" />
     <Compile Include="Assets\Component\Physics\Scripts\PhysicsTest.cs" />
     <Compile Include="Assets\Component\Rigidbody\Scripts\DragTest.cs" />
+    <Compile Include="Assets\Component\Rigidbody\Scripts\PerFrameDrag.cs" />
     <Compile Include="Assets\Component\Rigidbody\Scripts\RigibodyTest.cs" />
     <Compile Include="Assets\Component\Rigidbody\Scripts\TriggerTest.cs" />
     <Compile Include="Assets\Component\TransformTest\Scripts\DirectionTest.cs" />

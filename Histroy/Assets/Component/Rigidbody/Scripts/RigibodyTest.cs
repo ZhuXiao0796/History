@@ -19,7 +19,7 @@ namespace History.ComponentTest.RigidbodyTest
             rigidbody = GetComponent<Rigidbody>();
 
             rigidbody.velocity = new Vector3(1,0,1);
-            rigidbody.MovePosition(new Vector3(50,0,50));
+            //rigidbody.MovePosition(new Vector3(50,0,50));
 
             //StartCoroutine(VelocityChange());
             //StartCoroutine(Force());
