@@ -13,15 +13,20 @@ namespace History.CSharpAPI.TryCatchTest
         {
             try
             {
-                if (i >= 0)
-                {
-                    return;
-                }
-                Debug.Log(A.name);
+                //if (i >= 0)
+                //{
+                //    return;
+                //}
+                //Debug.Log(A.name);
+                GameObject gameObject = GameObject.Find("object");
+                Debug.Log(gameObject.name);
             }
             catch (System.Exception e)
             {
+                Debug.Log(e.StackTrace);
+                Debug.Log(e.Source);
                 Debug.Log(e.Message);
+                Debug.Log(e.TargetSite.MemberType);
                 throw;
             }
             finally

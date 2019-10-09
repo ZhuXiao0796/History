@@ -71,6 +71,7 @@
     <Compile Include="Assets\Component\Rigidbody\Scripts\RigibodyTest.cs" />
     <Compile Include="Assets\Component\Rigidbody\Scripts\TriggerTest.cs" />
     <Compile Include="Assets\Component\TransformTest\Scripts\DirectionTest.cs" />
+    <Compile Include="Assets\Component\TransformTest\Scripts\LocalrotationTest.cs" />
     <Compile Include="Assets\Component\TransformTest\Scripts\LookAtOnlyY.cs" />
     <Compile Include="Assets\Component\TransformTest\Scripts\NewTransformTest.cs" />
     <Compile Include="Assets\Component\TransformTest\Scripts\TransformTest.cs" />
