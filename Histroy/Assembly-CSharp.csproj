@@ -66,6 +66,7 @@
     <Compile Include="Assets\Component\LineRendererTest\Scripts\LineRendererTest.cs" />
     <Compile Include="Assets\Component\ParticleSystemTest\Scripts\PatricleSystemTest.cs" />
     <Compile Include="Assets\Component\Physics\Scripts\PhysicsTest.cs" />
+    <Compile Include="Assets\Component\Physics\Scripts\SphereTest.cs" />
     <Compile Include="Assets\Component\Rigidbody\Scripts\DragTest.cs" />
     <Compile Include="Assets\Component\Rigidbody\Scripts\PerFrameDrag.cs" />
     <Compile Include="Assets\Component\Rigidbody\Scripts\RigibodyTest.cs" />
@@ -98,6 +99,8 @@
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\FrameEveryPer.cs" />
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\WaitCoroutineTest.cs" />
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\WhileCoroutineTest.cs" />
+    <Compile Include="Assets\UnityAPI\LifeCycleTest\Scripts\Creator.cs" />
+    <Compile Include="Assets\UnityAPI\LifeCycleTest\Scripts\Timer.cs" />
     <Compile Include="Assets\UnityAPI\OnDestroyTest\Scripts\OnDestroyTest.cs" />
     <Compile Include="Assets\UnityAPI\SetActiveTest\Scripts\SetActiveTest.cs" />
     <Compile Include="Assets\UnityAPI\TimeTest\Scripts\TimeScaleTest.cs" />
@@ -113,6 +116,7 @@
     <None Include="Assets\Resources\ParticleSystemPack\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\CSharpAPI\ActionAndFuncTest\README.txt" />
     <None Include="Assets\Resources\ParticleSystemPack\EffectExamples\Misc Effects\Shaders\Respawn.shader" />
+    <None Include="Assets\UnityAPI\LifeCycleTest\ReadMe.txt" />
     <None Include="Assets\Resources\ParticleSystemPack\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Resources\ParticleSystemPack\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Resources\ParticleSystemPack\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
