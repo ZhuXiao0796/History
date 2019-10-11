@@ -12,7 +12,7 @@ namespace History.UnityAPI.CoroutineTest
         // Start is called before the first frame update
         void Start()
         {
-            StartCoroutine(WaitForSecondsTest());
+            //StartCoroutine(WaitForSecondsTest());
             StartCoroutine(WaitForSecondsRealtimeTest());
         }
 
@@ -30,7 +30,7 @@ namespace History.UnityAPI.CoroutineTest
             while (true)
             {
                 Debug.Log(Time.realtimeSinceStartup + "当前情况是 WaitForSecondsRealtime");
-                yield return new WaitForSecondsRealtime(1f);
+                yield return new WaitForSecondsRealtime(1.00000000f);
             }
         }
 

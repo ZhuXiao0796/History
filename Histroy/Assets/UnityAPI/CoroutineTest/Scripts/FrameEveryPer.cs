@@ -28,27 +28,27 @@ namespace History.UnityAPI.CoroutineTest
             Application.targetFrameRate = FixedFrame;
         }
 
-        // Use this for initialization
-        void Start()
-        {
-            m_LastUpdateShowTime = Time.realtimeSinceStartup;
-        }
+        //// Use this for initialization
+        //void Start()
+        //{
+        //    m_LastUpdateShowTime = Time.realtimeSinceStartup;
+        //}
 
-        // Update is called once per frame
-        void Update()
-        {
-            m_FrameUpdate++;
-            if (Time.realtimeSinceStartup - m_LastUpdateShowTime >= m_UpdateShowDeltaTime)
-            {
-                m_FPS = m_FrameUpdate / (Time.realtimeSinceStartup - m_LastUpdateShowTime);
-                m_FrameUpdate = 0;
-                m_LastUpdateShowTime = Time.realtimeSinceStartup;
-            }
-        }
+        //// Update is called once per frame
+        //void Update()
+        //{
+        //    m_FrameUpdate++;
+        //    if (Time.realtimeSinceStartup - m_LastUpdateShowTime >= m_UpdateShowDeltaTime)
+        //    {
+        //        m_FPS = m_FrameUpdate / (Time.realtimeSinceStartup - m_LastUpdateShowTime);
+        //        m_FrameUpdate = 0;
+        //        m_LastUpdateShowTime = Time.realtimeSinceStartup;
+        //    }
+        //}
 
-        void OnGUI()
-        {
-            GUI.Label(new Rect(Screen.width / 2, 0, 100, 100), "FPS: " + m_FPS);
-        }
+        //void OnGUI()
+        //{
+        //    GUI.Label(new Rect(Screen.width / 2, 0, 100, 100), "FPS: " + m_FPS);
+        //}
     }
 }
