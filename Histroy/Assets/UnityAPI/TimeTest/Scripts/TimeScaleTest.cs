@@ -12,10 +12,13 @@ namespace History.UnityAPI.TimeScaleTest
 
         }
 
-        // Update is called once per frame
-        void Update()
+        private IEnumerator TimerTest()
         {
-
+            while (true)
+            {
+                //yield return new WaitForSeconds();
+                yield return null;
+            }
         }
     }
 }

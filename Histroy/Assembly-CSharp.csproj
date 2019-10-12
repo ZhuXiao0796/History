@@ -94,6 +94,7 @@
     <Compile Include="Assets\Resources\ParticleSystemPack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Resources\ParticleSystemPack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Resources\ParticleSystemPack\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\UnityAPI\AttributeTest\Scripts\AttributeTest.cs" />
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\CoroutineTest.cs" />
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\FrameAndCoroutineTest.cs" />
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\FrameEveryPer.cs" />
