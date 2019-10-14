@@ -84,6 +84,7 @@
     <Compile Include="Assets\CSharpAPI\DelegateAndEventTest\Scripts\EventAndDelegate.cs" />
     <Compile Include="Assets\CSharpAPI\DelegateAndEventTest\Scripts\MyObserverTest.cs" />
     <Compile Include="Assets\CSharpAPI\DelegateAndEventTest\Scripts\ObserverTest.cs" />
+    <Compile Include="Assets\CSharpAPI\EnumTest\Scripts\EnumTest.cs" />
     <Compile Include="Assets\CSharpAPI\InterfaceTest\Scripts\InterfaceTest.cs" />
     <Compile Include="Assets\CSharpAPI\SystemIOTest\Scripts\SystemIOTest.cs" />
     <Compile Include="Assets\CSharpAPI\ValueAndReference\EnumAndReference.cs" />
