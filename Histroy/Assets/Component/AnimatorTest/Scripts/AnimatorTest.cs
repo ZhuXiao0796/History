@@ -14,13 +14,16 @@ namespace History.ComponentTest.AnimatorTest
         void Start()
         {
             Animator = GetComponent<Animator>();
+            Animator.speed = 0.5f;
+            //Animator.SetTrigger("hit");
+            StartCoroutine(AnimatorTestMethod());
         }
 
-        //如果我在 Update 中不断调用 animator.SetTrigger
-        //那么动画是否能正常播放呢
-        void Update()
+        private IEnumerator AnimatorTestMethod()
         {
-            //Animator.SetTrigger("hit");
+            yield return new WaitForSeconds(5f);
+            //Animator.SetTrigger("idle");
+            Animator.speed = 1;
         }
     }
 }

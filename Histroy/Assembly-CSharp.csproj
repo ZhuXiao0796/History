@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Component\AnimatorTest\Scripts\AnimatorTest.cs" />
+    <Compile Include="Assets\Component\ColliderTest\Scripts\ColliderCloneTest.cs" />
     <Compile Include="Assets\Component\LineRendererTest\Scripts\LineRendererTest.cs" />
     <Compile Include="Assets\Component\ParticleSystemTest\Scripts\PatricleSystemTest.cs" />
     <Compile Include="Assets\Component\Physics\Scripts\PhysicsTest.cs" />
@@ -85,6 +86,8 @@
     <Compile Include="Assets\CSharpAPI\DelegateAndEventTest\Scripts\MyObserverTest.cs" />
     <Compile Include="Assets\CSharpAPI\DelegateAndEventTest\Scripts\ObserverTest.cs" />
     <Compile Include="Assets\CSharpAPI\EnumTest\Scripts\EnumTest.cs" />
+    <Compile Include="Assets\CSharpAPI\InhertTest\Scripts\InhertBase.cs" />
+    <Compile Include="Assets\CSharpAPI\InhertTest\Scripts\InhertSub.cs" />
     <Compile Include="Assets\CSharpAPI\InterfaceTest\Scripts\InterfaceTest.cs" />
     <Compile Include="Assets\CSharpAPI\SystemIOTest\Scripts\SystemIOTest.cs" />
     <Compile Include="Assets\CSharpAPI\ValueAndReference\EnumAndReference.cs" />
@@ -101,6 +104,7 @@
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\FrameEveryPer.cs" />
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\WaitCoroutineTest.cs" />
     <Compile Include="Assets\UnityAPI\CoroutineTest\Scripts\WhileCoroutineTest.cs" />
+    <Compile Include="Assets\UnityAPI\FindTest\Scripts\FindTest.cs" />
     <Compile Include="Assets\UnityAPI\LifeCycleTest\Scripts\Creator.cs" />
     <Compile Include="Assets\UnityAPI\LifeCycleTest\Scripts\Timer.cs" />
     <Compile Include="Assets\UnityAPI\OnDestroyTest\Scripts\OnDestroyTest.cs" />
