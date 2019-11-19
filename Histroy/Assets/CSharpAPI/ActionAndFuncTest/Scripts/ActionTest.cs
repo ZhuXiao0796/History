@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace History.CSharpAPI.AcionTest {
+namespace History.CSharpAPI.AcionTest
+{
     public class ActionTest : MonoBehaviour
     {
         Action<string, int> ShowMessage;
@@ -20,12 +21,7 @@ namespace History.CSharpAPI.AcionTest {
 
         private void ActionTest_OnHitRequest()
         {
-            throw new NotImplementedException();
-        }
-
-        private void Update()
-        {
-
+            Debug.Log("我受伤了");
         }
 
         public void DisplayMessage(string msg, int printCount)
