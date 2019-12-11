@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,21 +10,63 @@ namespace History.CSharpAPI.ListTest
         // Start is called before the first frame update
         void Start()
         {
-            List<Cat> catsA = new List<Cat>();
-            List<Cat> catsB = new List<Cat>();
+            //List<Cat> catsA = new List<Cat>();
+            //Cat cat01 = new Cat
+            //{
+            //    name = "Dog"
+            //};
 
-            Cat cat = new Cat();
-            cat.name = "Dog";
+            //Cat cat02 = new Cat
+            //{
+            //    name = "Dog02"
+            //};
 
-            catsA.Add(cat);
+            //catsA.Add(cat01);
+            //catsA.Add(cat02);
 
-            catsB.Add(cat);
+            //List<Cat> catsB = new List<Cat>(catsA);
+            //catsB.Remove(catsB[1]);
 
-            var temp = catsA.FindAll(t=>t.name == "Dog");
-            temp.ForEach(t=> { catsB.Remove(t); }
-            );
+            //foreach (var item in catsA)
+            //{
+            //    Debug.Log(item.name);
+            //}
 
-            Debug.Log(catsB.Count);
+            List<int> testlist = new List<int>();
+            testlist.Add(5);
+            testlist.Add(5);
+           
+
+            testlist.Add(6);
+
+            testlist.Add(5);
+            testlist.Add(5);
+            testlist.Add(5);
+            Debug.Log(testlist.Count);
+
+            //testlist.ForEach(t =>
+            //{
+            //    if (t == 5)
+            //    {
+            //        Debug.Log("检测到了 退出");
+            //        return;
+            //    }
+            //});
+
+            foreach (var item in testlist)
+            {
+                if (item == 5)
+                {
+                    testlist.Remove(item);
+                    Debug.Log(2222);
+                    return;
+                }
+            }
+            Debug.Log(testlist.Count);
+
+
+
+
         }
 
         // Update is called once per frame
@@ -36,5 +79,46 @@ namespace History.CSharpAPI.ListTest
     public class Cat
     {
         public string name = "Cat";
+    }
+
+    public delegate bool DMethodA(int i);
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> list = new List<int>();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.Add(4);
+
+            list.DeleteItemA(t => t == 4);
+            
+
+           
+        }
+    }
+
+    static class TestA
+    {
+        public static void DeleteItemA<T>(this List<T> lst, DMethodA dele)
+        {
+            //lst.ForEach(t=>
+            //{
+            //    if ( )
+            //    {
+
+            //    }
+            //});
+        }
+        public static void DeleteItemA<T>(this List<T> lst, Func<bool> fun)
+        {
+            //lst.ForEach(delegate (T t)
+            //{
+            //    if (fun())
+            //        lst.Remove(t);
+            //});
+
+        }
     }
 }

@@ -16,7 +16,9 @@ namespace History.UnityAPI.PhysicsTest
         void Update()
         {
             //var colliders = Physics.OverlapBox(new Vector3(0,0,0),new Vector3(1,2,1));
-            var colliders = Physics.OverlapSphere(new Vector3(0,0,0),5f);
+            //var colliders = Physics.OverlapSphere(new Vector3(0,0,0),5f);
+            int id = LayerMask.NameToLayer("Ground");
+            var colliders = Physics.OverlapCapsule(new Vector3(0,0,0),new Vector3(0,5,0),1f,1<<id);
             foreach (var item in colliders)
             {
                 Debug.Log(item.name);
