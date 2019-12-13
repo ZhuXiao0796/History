@@ -53,19 +53,30 @@ namespace History.CSharpAPI.ListTest
             //    }
             //});
 
-            foreach (var item in testlist)
+            //foreach (var item in testlist)
+            //{
+            //    if (item == 5)
+            //    {
+            //        //testlist.Remove(item);
+            //        Debug.Log(2222);
+            //        //return;
+            //        break;
+            //        //continue;
+            //    }
+            //    Debug.Log("1111");
+            //}
+
+            testlist.ForEach(t=>
             {
-                if (item == 5)
+                if (t == 5)
                 {
-                    testlist.Remove(item);
-                    Debug.Log(2222);
+                    Debug.Log(t);
                     return;
                 }
-            }
-            Debug.Log(testlist.Count);
+                Debug.Log("只有6 才会有这个 Debug" + t);
+            });
 
-
-
+            Debug.Log(testlist.Count + "123123123");
 
         }
 

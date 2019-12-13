@@ -83,6 +83,7 @@
     <Compile Include="Assets\CSharpAPI\ActionAndFuncTest\Scripts\ActionTest.cs" />
     <Compile Include="Assets\CSharpAPI\ArrayAndListTest\Scripts\ArrayHelper.cs" />
     <Compile Include="Assets\CSharpAPI\ArrayAndListTest\Scripts\ArrayTest.cs" />
+    <Compile Include="Assets\CSharpAPI\ArrayAndListTest\Scripts\ContinueTest.cs" />
     <Compile Include="Assets\CSharpAPI\ArrayAndListTest\Scripts\ListTest.cs" />
     <Compile Include="Assets\CSharpAPI\ArrayAndListTest\Scripts\QueueTest.cs" />
     <Compile Include="Assets\CSharpAPI\ArrayAndListTest\Scripts\SortedDicTest.cs" />
@@ -97,11 +98,13 @@
     <Compile Include="Assets\CSharpAPI\InhertTest\Scripts\InhertBase.cs" />
     <Compile Include="Assets\CSharpAPI\InhertTest\Scripts\InhertSub.cs" />
     <Compile Include="Assets\CSharpAPI\InterfaceTest\Scripts\InterfaceTest.cs" />
+    <Compile Include="Assets\CSharpAPI\RecursionTest\Scripts\RecuisionTest.cs" />
     <Compile Include="Assets\CSharpAPI\Socket\Script\SocketClientTest.cs" />
     <Compile Include="Assets\CSharpAPI\Socket\Script\SocketTest.cs" />
     <Compile Include="Assets\CSharpAPI\SystemIOTest\Scripts\SystemIOTest.cs" />
     <Compile Include="Assets\CSharpAPI\TypeTest\Scripts\TypeTest.cs" />
-    <Compile Include="Assets\CSharpAPI\ValueAndReference\EnumAndReference.cs" />
+    <Compile Include="Assets\CSharpAPI\ValueAndReference\Scripts\EnumAndReference.cs" />
+    <Compile Include="Assets\CSharpAPI\ValueAndReference\Scripts\RemainderTest.cs" />
     <Compile Include="Assets\DesignPattern\Scripts\LoadBalancer.cs" />
     <Compile Include="Assets\DesignPattern\Scripts\SingletonTest.cs" />
     <Compile Include="Assets\UnityAPI\AndroidTest\LogTest\AndroidLogButton.cs" />
