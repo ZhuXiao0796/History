@@ -20,16 +20,16 @@ namespace History.UnityAPI.Vector3Test
             //Quaternion
         }
 
-        private void OnGUI()
-        {
-            if (GUILayout.Button("Angle"))
-            {
-                Debug.Log(Vector3.Angle(A.transform.position, B.transform.position));
-            }
-            if (GUILayout.Button("SignedAngle"))
-            {
-                Debug.Log(Vector3.SignedAngle(A.transform.position - B.transform.position, A.transform.position, -transform.up));
-            }
-        }
+        //private void OnGUI()
+        //{
+        //    if (GUILayout.Button("Angle"))
+        //    {
+        //        Debug.Log(Vector3.Angle(A.transform.position, B.transform.position));
+        //    }
+        //    if (GUILayout.Button("SignedAngle"))
+        //    {
+        //        Debug.Log(Vector3.SignedAngle(A.transform.position - B.transform.position, A.transform.position, -transform.up));
+        //    }
+        //}
     }
 }

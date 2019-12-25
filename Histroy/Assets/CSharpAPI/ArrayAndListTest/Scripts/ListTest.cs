@@ -10,6 +10,7 @@ namespace History.CSharpAPI.ListTest
         // Start is called before the first frame update
         void Start()
         {
+            #region 2019 12 10
             //List<Cat> catsA = new List<Cat>();
             //Cat cat01 = new Cat
             //{
@@ -32,17 +33,17 @@ namespace History.CSharpAPI.ListTest
             //    Debug.Log(item.name);
             //}
 
-            List<int> testlist = new List<int>();
-            testlist.Add(5);
-            testlist.Add(5);
-           
+            //List<int> testlist = new List<int>();
+            //testlist.Add(5);
+            //testlist.Add(5);
 
-            testlist.Add(6);
 
-            testlist.Add(5);
-            testlist.Add(5);
-            testlist.Add(5);
-            Debug.Log(testlist.Count);
+            //testlist.Add(6);
+
+            //testlist.Add(5);
+            //testlist.Add(5);
+            //testlist.Add(5);
+            //Debug.Log(testlist.Count);
 
             //testlist.ForEach(t =>
             //{
@@ -66,18 +67,49 @@ namespace History.CSharpAPI.ListTest
             //    Debug.Log("1111");
             //}
 
-            testlist.ForEach(t=>
+            //testlist.ForEach(t=>
+            //{
+            //    if (t == 5)
+            //    {
+            //        Debug.Log(t);
+            //        return;
+            //    }
+            //    Debug.Log("只有6 才会有这个 Debug" + t);
+            //});
+
+            //Debug.Log(testlist.Count + "123123123");
+            #endregion
+
+            #region  2019 12 19
+            List<Cat> cats = new List<Cat>();
+            Cat cat00 = new Cat("00");
+            Cat cat01 = new Cat("01");
+            Cat cat02 = new Cat("02");
+            Cat cat03 = new Cat("03");
+            Cat cat04 = new Cat("04");
+            Cat cat05 = new Cat("05");
+            Cat cat06 = new Cat("06");
+            cats.Add(cat00);
+            cats.Add(cat01);
+            cats.Add(cat02);
+            cats.Add(cat03);
+            cats.Add(cat04);
+            cats.Add(cat05);
+            cats.Add(cat06);
+
+            foreach (var item in cats)
             {
-                if (t == 5)
+                Debug.Log(item.name);
+                if (item.name == "02")
                 {
-                    Debug.Log(t);
-                    return;
+                    foreach (var x in cats)
+                    {
+                        Debug.Log(x.name);
+                    }
                 }
-                Debug.Log("只有6 才会有这个 Debug" + t);
-            });
+            }
 
-            Debug.Log(testlist.Count + "123123123");
-
+            #endregion
         }
 
         // Update is called once per frame
@@ -90,26 +122,14 @@ namespace History.CSharpAPI.ListTest
     public class Cat
     {
         public string name = "Cat";
-    }
 
-    public delegate bool DMethodA(int i);
-    class Program
-    {
-        static void Main(string[] args)
+        public Cat(string _name)
         {
-            List<int> list = new List<int>();
-            list.Add(1);
-            list.Add(2);
-            list.Add(3);
-            list.Add(4);
-
-            list.DeleteItemA(t => t == 4);
-            
-
-           
+            name = _name;
         }
     }
 
+    public delegate bool DMethodA(int i);
     static class TestA
     {
         public static void DeleteItemA<T>(this List<T> lst, DMethodA dele)
