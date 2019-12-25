@@ -4,28 +4,15 @@ using UnityEngine;
 
 public class DefaultTest : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
     void Start()
     {
-        Debug.Log(default(Cat));
-        if (default(Cat) == null)
-        {
-
-        }
+        
     }
-
-    public T DefaultTest01<T> (List<T>test)
-    {
-        var result = test.Find(t=>t.Equals(null));
-        if (result!=default)
-        {
-            return result;
-        }
-        else
-        {
-            return default(T);
-        }
-    }
+    
 }
 
 public class Cat
