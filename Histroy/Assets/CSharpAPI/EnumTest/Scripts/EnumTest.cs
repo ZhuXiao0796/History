@@ -16,6 +16,7 @@ namespace History.CSharpAPI.EnumTest
         public RandomEnum test;
         void Start()
         {
+             
             enums.Add(RandomEnum.A);
             enums.Add(RandomEnum.A);
             enums.Add(RandomEnum.A);

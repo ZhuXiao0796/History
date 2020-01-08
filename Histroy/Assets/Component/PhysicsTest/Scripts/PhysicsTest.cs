@@ -23,7 +23,7 @@ namespace History.ComponentTest.PhysicsTest
         void Update()
         {
             var colliders = Physics.OverlapCapsule(transform.position - transform.up, transform.position + transform.up, 1f);
-            PhysicsScene physicsScene = new PhysicsScene();
+            // PhysicsScene physicsScene = new PhysicsScene();
             
             if (colliders!=null)
             {

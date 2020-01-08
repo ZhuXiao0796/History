@@ -22,18 +22,26 @@ namespace History.CSharpAPI.DelegateTest
         }
     }
 
+    
+
+    
     public class Teacher
     {
         private string Name;
-
         public delegate void ShangKeHandler();
-
         public event ShangKeHandler OnShangKeEvent;
-
         public void ShangKe()
         {
             Debug.Log("上课啦");
-            OnShangKeEvent?.Invoke();
+            //OnShangKeEvent?.Invoke();
+            if (OnShangKeEvent != null)
+            {
+                OnShangKeEvent();
+            }
+            else
+            {
+                Debug.Log("Event is null");
+            }
         }
     }
 
