@@ -19,6 +19,7 @@ namespace History.CSharpAPI.ErrorTest
             {
                 Debug.Log(e.StackTrace);
                 //return;
+                //continue;
             }
         }
 

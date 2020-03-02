@@ -5,31 +5,39 @@ using UnityEngine;
 
 namespace History.CSharpAPI.AcionTest
 {
+    /// <summary>
+    /// 这里测试的是不带返回值，不带参数的事件
+    /// </summary>
     public class ActionTest : MonoBehaviour
     {
-        Action<string, int> ShowMessage;
-        event Action OnHitRequest;
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
-            //Action action = Update;
-            ShowMessage = DisplayMessage;
-            ShowMessage("Duan", 5);
+            //ClassA classA = new ClassA();
+            //ClassB classB = new ClassB();
 
-            OnHitRequest += ActionTest_OnHitRequest;
+            //classB.Action += classA.Debug02;
+
+            //classB.Debug01();
         }
+    }
 
-        private void ActionTest_OnHitRequest()
+    
+    public class ClassA
+    {
+        public void Debug02()
         {
-            Debug.Log("我受伤了");
+            Debug.Log(02);
         }
+    }
 
-        public void DisplayMessage(string msg, int printCount)
+    public class ClassB
+    {
+        public Action Action;
+
+        public void Debug01()
         {
-            for (int i = 0; i < printCount; i++)
-            {
-                Debug.Log(msg);
-            }
+            Debug.Log(01);
+            Action?.Invoke();
         }
     }
 }

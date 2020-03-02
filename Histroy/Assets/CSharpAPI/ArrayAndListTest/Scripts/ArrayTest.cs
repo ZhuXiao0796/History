@@ -1,35 +1,50 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Linq;
 
-public class ArrayTest : MonoBehaviour
+namespace History.CSharpAPI.ArrayTest
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ArrayTest : MonoBehaviour
     {
-        List<int> testInt = new List<int>();
-        testInt.Add(4);
-        testInt.Add(4);
-        testInt.Add(4);
-        testInt.Add(4);
-        testInt.Add(5);
-        testInt.Add(5);
-        testInt.Add(5);
-        testInt.Add(5);
-        testInt.Add(6);
-        testInt.Add(6);
-        testInt.Add(6);
-        testInt.Add(6);
+        // Start is called before the first frame update
+        void Start()
+        {
+            List<int> testInt = new List<int>();
+            testInt.Add(4);
+            testInt.Add(4);
+            testInt.Add(4);
+            testInt.Add(4);
+            testInt.Add(5);
+            testInt.Add(5);
+            testInt.Add(5);
+            testInt.Add(5);
+            testInt.Add(6);
+            testInt.Add(6);
+            testInt.Add(6);
+            testInt.Add(6);
 
-        testInt.RemovePlus(t=>t==5);
+            var temp = testInt.ToArray();
+            Debug.Log(temp.Length);
 
-        testInt.ForEach(t=>Debug.Log(t));
+            //temp.ToList().RemoveAll(t=>t==4);
 
-    }
+            //temp = temp02.ToArray();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            //Debug.Log(temp.Length);
+
+            //testInt.RemovePlus(t=>t==5);
+
+
+            //testInt.ForEach(t=>Debug.Log(t));
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

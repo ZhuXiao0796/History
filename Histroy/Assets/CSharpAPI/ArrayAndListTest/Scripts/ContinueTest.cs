@@ -2,29 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ContinueTest : MonoBehaviour
+namespace History.CSharpAPI.ArrayTest
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ContinueTest : MonoBehaviour
     {
-        List<int> listInt = new List<int>(8);
-        for (int i = 0; i < 8; i++)
+        // Start is called before the first frame update
+        void Start()
         {
-            listInt.Add(i);
-        }
-        foreach (var item in listInt)
-        {
-            if (item ==5)
+            List<int> listInt = new List<int>(8);
+            for (int i = 0; i < 8; i++)
             {
-                continue;
+                listInt.Add(i);
             }
-            Debug.Log("No continue" + item);
+            foreach (var item in listInt)
+            {
+                if (item == 5)
+                {
+                    continue;
+                }
+                Debug.Log("No continue" + item);
+            }
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

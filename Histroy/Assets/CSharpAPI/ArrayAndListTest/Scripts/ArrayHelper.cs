@@ -3,15 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class ArrayHelper 
+namespace History.CSharpAPI.ArrayTest
 {
-    public static List<T> RemovePlus<T>(this List<T> array, Func<T, bool> condition)
+    public static class ArrayHelper
     {
-        var remove = array.FindAll(t => condition(t));
-        remove.ForEach(q =>
+        public static List<T> RemovePlus<T>(this List<T> array, Func<T, bool> condition)
         {
-            array.Remove(q);
-        });
-        return array;
+            var remove = array.FindAll(t => condition(t));
+            remove.ForEach(q =>
+            {
+                array.Remove(q);
+            });
+            return array;
+        }
     }
 }

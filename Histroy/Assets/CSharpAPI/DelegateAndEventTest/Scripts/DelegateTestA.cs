@@ -18,6 +18,12 @@ namespace History.CSharpAPI.DelegateTest
         {
             GreetPeople("Liker", EnglishGreeting);
             GreetPeople("李志中", ChineseGreeting);
+            GreetPeople("Franch",FranchGreeting);
+        }
+
+        public void FranchGreeting(string name)
+        {
+            Debug.Log("FranchHello, " + name);
         }
 
         private void EnglishGreeting(string name)
